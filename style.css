@@ -1,0 +1,19 @@
+h2 {
+    color: white;
+    border-bottom: 1px solid white;
+    margin-bottom: 15px;
+}
+
+.content {
+    background-image: linear-gradient(to right, rgb(255, 0, 51) , rgb(200, 255, 0));
+    height: 50vh;
+    border-radius: 5px;
+    -moz-box-shadow: 0 0 20px black;
+    -webkit-box-shadow: 0 0 20px black;
+    box-shadow: 0 0 20px black;
+    margin: auto;
+    margin-top: 100px;
+    width: 50vw;
+    padding: 10px;
+   
+}
