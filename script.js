@@ -8,3 +8,10 @@ document.addEventListener('DOMContentLoaded',e=>{
 
 search_btn.addEventListener('click', handleInput)
 
+function handleInput(){
+    if(input.value === ''){
+        alert('Please enter a word')
+    }else{
+        getResult(input.value)
+    }
+}
