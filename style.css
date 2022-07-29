@@ -38,3 +38,8 @@ button:hover{
     padding: 5px;
     background-color: rgb(18, 167, 212);
 }
+
+.data-holder {
+    margin-top: 10px;
+    
+}
