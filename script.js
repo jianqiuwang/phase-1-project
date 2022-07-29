@@ -28,4 +28,6 @@ function getResult(){
         }
         return resp.json()
     })
-}
+    .then(data=>console.log(data))
+}   
+
