@@ -23,6 +23,8 @@ function getResult(){
     .then(resp=>{
         if(resp.ok===false){
             invalid.textContent='No result was found'
+        }else{
+            invalid.textContent=''
         }
     })
 }
