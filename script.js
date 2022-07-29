@@ -19,4 +19,5 @@ function handleInput(){
 
 function getResult(){
     fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${input.value}`)
+    .then(resp=>resp.json())
 }
