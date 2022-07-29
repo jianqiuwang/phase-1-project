@@ -26,5 +26,6 @@ function getResult(){
         }else{
             invalid.textContent=''
         }
+        return resp.json()
     })
 }
