@@ -15,5 +15,25 @@ h2 {
     margin-top: 100px;
     width: 50vw;
     padding: 10px;
-   
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.input input {
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 25vw;
+}
+
+button {
+    margin-top: 10px;
+    max-width: 5vw;
+}
+
+button:hover{
+    background-color: white;
+    padding: 5px;
 }
