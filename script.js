@@ -6,3 +6,5 @@ document.addEventListener('DOMContentLoaded',e=>{
     e.preventDefault()
 })
 
+search_btn.addEventListener('click', handleInput)
+
