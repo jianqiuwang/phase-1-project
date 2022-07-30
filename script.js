@@ -51,6 +51,7 @@ function getResult(){
         let btn = document.createElement('button')
         btn.addEventListener('click',handleDelete)
         btn.textContent='x'
+        p.appendChild(btn)
 
     }
 
