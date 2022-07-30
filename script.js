@@ -46,5 +46,6 @@ function getResult(){
     save_btn.addEventListener('click',saveResult)
     function saveResult(){
         let p = document.createElement('p')
+        p.textContent=`${input.value}: `+getText.innerText
     }
 
