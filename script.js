@@ -2,6 +2,8 @@ const input = document.getElementById('input')
 const search_btn = document.getElementById('search_btn')
 const save_btn = document.getElementById('save_btn')
 const invalid = document.querySelector('.invalid')
+const getText = document.querySelector('.show-data')
+const saveData = document.querySelector('.save-data')
 
 document.addEventListener('DOMContentLoaded',e=>{
     e.preventDefault()
@@ -17,7 +19,6 @@ function handleInput(){
     }
 }
 
-
 function getResult(){
     fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${input.value}`)
     .then(resp=>{
@@ -28,6 +29,16 @@ function getResult(){
         }
         return resp.json()
     })
-    .then(data=>console.log(data))
-}   
+    .then(data=>{
+        // save_btn.addEventListener('click',saveData(data))
+        console.log(data)
+        function getResult(){
+
+        }
+    })
+    
+} 
+   
+
+   
 
