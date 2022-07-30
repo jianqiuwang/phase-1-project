@@ -49,7 +49,8 @@ function getResult(){
         p.textContent=`${input.value}: `+getText.innerText
         saveData.appendChild(p)
         let btn = document.createElement('button')
-        
+        btn.addEventListener('click',handleDelete)
+
     }
 
 
