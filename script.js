@@ -54,7 +54,6 @@ function getResult(){
         p.appendChild(btn)
 
     }
-
     function handleDelete(e){
         e.target.parentNode.remove()
     }
