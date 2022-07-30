@@ -50,6 +50,7 @@ function getResult(){
         saveData.appendChild(p)
         let btn = document.createElement('button')
         btn.addEventListener('click',handleDelete)
+        btn.textContent='x'
 
     }
 
