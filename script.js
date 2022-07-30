@@ -33,6 +33,7 @@ function getResult(){
         // save_btn.addEventListener('click',saveData(data))
         console.log(data)
         function getResult(){
+            getText.innerText = data[0].meanings[0].definitions[0].definition
 
         }
     })
