@@ -34,7 +34,8 @@ function getResult(){
         console.log(data)
         function getResult(){
             getText.innerText = data[0].meanings[0].definitions[0].definition
-
+            let res ={}
+            res[input.value]=getText.innerText
         }
     })
     
