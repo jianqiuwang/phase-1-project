@@ -48,5 +48,8 @@ function getResult(){
         let p = document.createElement('p')
         p.textContent=`${input.value}: `+getText.innerText
         saveData.appendChild(p)
+        let btn = document.createElement('button')
+        
     }
+
 
