@@ -10,6 +10,13 @@ document.addEventListener('DOMContentLoaded',e=>{
 })
 
 search_btn.addEventListener('click', handleInput)
+document.addEventListener('keydown',keyDownEvent)
+
+function keyDownEvent(event){
+    if(event.key === "Enter"){
+        handleInput()
+    }
+}
 
 function handleInput(){
     if(input.value === ''){
@@ -30,7 +37,6 @@ function getResult(){
         return resp.json()
     })
     .then(data=>{
-        // save_btn.addEventListener('click',saveData(data))
         console.log(data)
         function getResult(){
             getText.innerText = data[0].meanings[0].definitions[0].definition
@@ -52,7 +58,6 @@ function getResult(){
         btn.addEventListener('click',handleDelete)
         btn.textContent='x'
         p.appendChild(btn)
-
     }
     function handleDelete(e){
         e.target.parentNode.remove()
