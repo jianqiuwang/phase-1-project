@@ -12,7 +12,7 @@ function preventDefault(e){
     e.preventDefault()
 }
 
-search_btn.addEventListener('click', handleInput)
+search_btn.addEventListener('submit', handleInput)
 document.addEventListener('keydown',keyDownEvent)
 
 function keyDownEvent(event){
