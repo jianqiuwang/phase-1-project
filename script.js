@@ -4,10 +4,13 @@ const save_btn = document.getElementById('save_btn')
 const invalid = document.querySelector('.invalid')
 const getText = document.querySelector('.show-data')
 const saveData = document.querySelector('.save-data')
+const content_box = document.querySelector('.contanier')
 
-document.addEventListener('DOMContentLoaded',e=>{
+document.addEventListener('DOMContentLoaded',preventDefault)
+   
+function preventDefault(e){
     e.preventDefault()
-})
+}
 
 search_btn.addEventListener('click', handleInput)
 document.addEventListener('keydown',keyDownEvent)
@@ -39,9 +42,13 @@ function getResult(){
     .then(data=>{
         console.log(data)
         function getResult(){
-            getText.innerText = data[0].meanings[0].definitions[0].definition
-            let res ={}
-            res[input.value]=getText.innerText
+            const result=data[0].meanings[0].definitions[0].definition
+            let res =[]
+            res.push(result)
+            res.forEach(element=>{
+                getText.innerText=element
+
+            })
 
         }
         getResult(data)
@@ -58,8 +65,9 @@ function getResult(){
         btn.addEventListener('click',handleDelete)
         btn.textContent='x'
         p.appendChild(btn)
+
     }
     function handleDelete(e){
         e.target.parentNode.remove()
-    }
 
+    }
